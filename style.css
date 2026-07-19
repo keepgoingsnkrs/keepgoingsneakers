@@ -38,9 +38,22 @@ nav{
 
 }
 
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
 .logo img{
 
-    height:120px;
+    height:65px;
+
+    width:auto;
+
+    display:block;
+
 
 }
 
