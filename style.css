@@ -95,6 +95,9 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:150px 8% 80px;
+
+    background:
+    radial-gradient(circle at right,#f5f5f5 0%,#ffffff 70%);
 }
 
 .hero-text{
@@ -132,7 +135,8 @@ nav{
     background:#111;
     color:#fff;
     text-decoration:none;
-    padding:20px 42px; font-size:18px;
+    padding:18px 40px;
+font-size:17px;
     border-radius:10px;
     font-weight:bold;
     transition:.3s;
@@ -170,7 +174,14 @@ nav{
 .hero-image img{
     width:100%;
     max-width:820px;
+
     filter:drop-shadow(0 30px 40px rgba(0,0,0,.18));
+
+    transition:.45s ease;
+}
+
+.hero-image img:hover{
+    transform:rotate(-3deg) scale(1.05);
 }
 
 .hero-image img:hover{
