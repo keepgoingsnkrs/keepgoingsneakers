@@ -273,3 +273,55 @@ nav{
         gap:50px;
     }
 }
+
+/* ===========================
+   SHOP BY CATEGORY
+=========================== */
+
+.categories{
+    padding:90px 8%;
+    background:#fafafa;
+}
+
+.categories h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.category-card{
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    text-decoration:none;
+    color:#111;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.category-card h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.category-card p{
+    color:#666;
+    margin-bottom:35px;
+    line-height:28px;
+}
+
+.category-card span{
+    color:#ff6a00;
+    font-weight:bold;
+}
