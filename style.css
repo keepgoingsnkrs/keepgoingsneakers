@@ -331,7 +331,11 @@ nav{
     }
 
     .category-grid{
-        grid-template-columns:1fr;
-    }
+    grid-template-columns:1fr;
+}
+
+.category-card img{
+    height:220px;
+}
 
 }
