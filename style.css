@@ -163,8 +163,8 @@ nav{
 }
 
 .hero-image img{
-    width:100%;
-    max-width:650px;
+    width:110%;
+    max-width:750px;
     transition:.5s;
 }
 
