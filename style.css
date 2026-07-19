@@ -11,7 +11,7 @@ html{
 body{
     font-family:Arial, Helvetica, sans-serif;
     color:#111;
-    background:white;
+    background:#fff;
 }
 
 /* ===========================
@@ -23,11 +23,11 @@ nav{
     top:0;
     left:0;
     width:100%;
-    background:white;
+    background:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 60px;
+    padding:18px 60px;
     box-shadow:0 2px 15px rgba(0,0,0,.05);
     z-index:999;
 }
@@ -38,7 +38,7 @@ nav{
 }
 
 .logo img{
-    height:65px;
+    height:70px;
     width:auto;
     display:block;
     transition:.3s ease;
@@ -51,7 +51,7 @@ nav{
 .menu{
     display:flex;
     list-style:none;
-    gap:40px;
+    gap:38px;
 }
 
 .menu li{
@@ -63,9 +63,8 @@ nav{
     color:#111;
     font-weight:600;
     transition:.3s;
+    font-size:16px;
 }
-
-/* Orange underline animation */
 
 .menu a::after{
     content:"";
@@ -91,33 +90,37 @@ nav{
 =========================== */
 
 .hero{
-    min-height:100vh;
+    min-height:90vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:120px 8% 60px;
+    padding:110px 8% 60px;
 }
 
 .hero-text{
-    width:50%;
+    width:48%;
 }
 
 .tag{
     color:#ff6a00;
-    font-weight:bold;
-    letter-spacing:3px;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
 .hero-text h1{
-    font-size:70px;
-    line-height:75px;
-    margin:20px 0;
+    font-size:78px;
+    line-height:82px;
+    margin-bottom:25px;
 }
 
 .description{
-    font-size:22px;
+    font-size:24px;
     color:#666;
-    margin-bottom:40px;
+    line-height:38px;
+    margin-bottom:45px;
 }
 
 .buttons{
@@ -129,8 +132,8 @@ nav{
     background:#111;
     color:white;
     text-decoration:none;
-    padding:16px 35px;
-    border-radius:8px;
+    padding:18px 38px;
+    border-radius:10px;
     font-weight:bold;
     transition:.3s;
 }
@@ -139,37 +142,39 @@ nav{
     border:2px solid #111;
     color:#111;
     text-decoration:none;
-    padding:16px 35px;
-    border-radius:8px;
+    padding:18px 38px;
+    border-radius:10px;
     font-weight:bold;
     transition:.3s;
 }
 
 .shop:hover{
     background:#ff6a00;
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 }
 
 .learn:hover{
     background:#111;
-    color:white;
-    transform:translateY(-3px);
+    color:#fff;
+    transform:translateY(-4px);
 }
 
 .hero-image{
-    width:50%;
+    width:52%;
     display:flex;
     justify-content:center;
+    align-items:center;
+    padding-left:40px;
 }
 
 .hero-image img{
-    width:110%;
-    max-width:750px;
-    transition:.5s;
+    width:115%;
+    max-width:780px;
+    transition:.5s ease;
 }
 
 .hero-image img:hover{
-    transform:rotate(-4deg) scale(1.03);
+    transform:rotate(-3deg) scale(1.04);
 }
 
 /* ===========================
@@ -191,7 +196,7 @@ nav{
 .why-image img{
     width:100%;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
 }
 
 .why-text{
@@ -199,13 +204,13 @@ nav{
 }
 
 .why-text h2{
-    font-size:48px;
-    margin-bottom:25px;
+    font-size:50px;
+    margin-bottom:30px;
 }
 
 .why-text p{
     font-size:22px;
-    line-height:42px;
+    line-height:44px;
     color:#555;
 }
 
@@ -226,6 +231,8 @@ nav{
     .hero{
         flex-direction:column;
         text-align:center;
+        min-height:auto;
+        padding:140px 8% 60px;
     }
 
     .hero-text,
@@ -235,21 +242,34 @@ nav{
         width:100%;
     }
 
-    .hero-image{
-        margin-top:50px;
+    .hero-text h1{
+        font-size:52px;
+        line-height:58px;
+    }
+
+    .description{
+        font-size:20px;
+        line-height:32px;
     }
 
     .buttons{
         justify-content:center;
+        flex-wrap:wrap;
     }
 
-    .hero-text h1{
-        font-size:50px;
-        line-height:55px;
+    .hero-image{
+        padding-left:0;
+        margin-top:40px;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:500px;
     }
 
     .why{
         flex-direction:column;
         text-align:center;
+        gap:50px;
     }
 }
